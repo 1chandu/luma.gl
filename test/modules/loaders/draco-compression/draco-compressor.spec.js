@@ -4,8 +4,9 @@ const path = require('path');
 import {DracoCompressor} from 'loaders.gl';
 
 import test from 'tape-catch';
+
 test('pack-and-unpack-buffers', t => {
-const dracoCompressor = new DracoCompressor();
+  const dracoCompressor = new DracoCompressor();
 
   fs.readFile(path.resolve(__dirname, './bunny.drc'), (err, data) => {
     if (err) {
